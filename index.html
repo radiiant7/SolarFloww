@@ -33,7 +33,7 @@
     }
 
     #coffee-popup.show {
-      opacity: 1;
+      opacity: 0.9;
       pointer-events: auto;
     }
 
@@ -54,7 +54,7 @@
       transform: translate(-50%, -50%) scale(1);
 
       /* Smooth slower animation */
-      transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+      transition: transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
     /* Controlled glide to bottom-left */
@@ -101,8 +101,8 @@
   <!-- POPUP -->
   <div id="coffee-popup">
     <div id="coffee-box">
-      <h2>Enjoying SolarFloww?</h2>
-      <h3>If you like this tool, consider supporting it ☀️</p>
+      <h1>Enjoying SolarFloww?</h1>
+      <h2>If you like this tool, consider supporting it ☀️</h2>
       <a href="https://ko-fi.com/radiant7#payment-widget" target="_blank" id="coffee-btn">
         Support me on ko-fi!
       </a>
@@ -114,11 +114,11 @@
 const popup = document.getElementById("coffee-popup");
 const box = document.getElementById("coffee-box");
 
-// Show after 45 seconds
+// Show after 50 seconds
 setTimeout(() => {
   popup.style.pointerEvents = "auto"; // ENABLE clicks
   popup.classList.add("show");
-}, 45000);
+}, 50000);
 
 function flyAway() {
   box.classList.add("fly");
