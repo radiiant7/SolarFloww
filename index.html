@@ -59,7 +59,7 @@
 
     /* Controlled glide to bottom-left */
     #coffee-box.fly {
-  	transform: translate(calc(-56.7vw + 20px), calc(-33vh - 20px)) scale(0.4);
+  	transform: translate(calc(-56.9vw + 20px), calc(-33vh - 20px)) scale(0.4);
 }
     }
 
@@ -114,11 +114,11 @@
 const popup = document.getElementById("coffee-popup");
 const box = document.getElementById("coffee-box");
 
-// Show after 52 seconds
+// Show after 59 seconds
 setTimeout(() => {
   popup.style.pointerEvents = "auto"; // ENABLE clicks
   popup.classList.add("show");
-}, 52000);
+}, 59000);
 
 function flyAway() {
   box.classList.add("fly");
